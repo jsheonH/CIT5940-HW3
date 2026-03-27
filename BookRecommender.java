@@ -115,6 +115,7 @@ public class BookRecommender {
         // For each user, connect all pairs of books they liked (user -> {book1, book2, book3})
         for (String user : userToBooks.keySet()) {
             List<String> books = new ArrayList<>(userToBooks.get(user));
+            Collections.sort(books);
 
             // user -> {book1, book2, book3} => user -> {(book1, book2), (book2, book3), (book1, book3)}
             for (int i = 0; i < books.size(); i++) {
@@ -174,7 +175,9 @@ public class BookRecommender {
         // 2. Lexicographically by book ID (tie-break)
         Collections.sort(list, (a, b) -> {
             if (!a.getValue().equals(b.getValue())) {
-                return b.getValue() - a.getValue(); // higher weight first
+                int cmp = Integer.compare(b.getValue(), a.getValue());
+                if (cmp != 0) return cmp;
+                return a.getKey().compareTo(b.getKey()); // higher weight first
             }
             return a.getKey().compareTo(b.getKey()); // alphabetical order
         });
@@ -208,9 +211,8 @@ public class BookRecommender {
 
         // Convert likedBooks to a set for fast lookup (to exclude later)
         Set<String> likedSet = new HashSet<>(likedBooks);
-
         // Step 1: Aggregate scores
-        for (String book : likedBooks) {
+        for (String book : likedSet) {
 
             // Skip if the book is not in the graph
             if (!coLikeGraph.containsKey(book)) continue;
@@ -238,11 +240,8 @@ public class BookRecommender {
         List<Map.Entry<String, Integer>> list = new ArrayList<>(scoreMap.entrySet());
 
         Collections.sort(list, (a, b) -> {
-            // Sort by descending cumulative score
-            if (!a.getValue().equals(b.getValue())) {
-                return b.getValue() - a.getValue();
-            }
-            // Tie-break: lexicographical order
+            int cmp = Integer.compare(b.getValue(), a.getValue());
+            if (cmp != 0) return cmp;
             return a.getKey().compareTo(b.getKey());
         });
 
@@ -273,7 +272,7 @@ public class BookRecommender {
 
         // Step 2: Compute similarity between target user and all other users
         // Key = other user, Value = number of common books
-        Map<String, Integer> similarity = new HashMap<>();
+        Map<String, Double> similarity = new HashMap<>();
 
         // Iterate through all users
         for (String otherUser : userToBooks.keySet()) {
@@ -285,16 +284,16 @@ public class BookRecommender {
             Set<String> otherBooks = userToBooks.get(otherUser);
 
             // Count how many books both users like (intersection size)
-            int common = 0;
-            for (String book : otherBooks) {
-                if (targetBooks.contains(book)) {
-                    common++;
-                }
-            }
+            Set<String> intersection = new HashSet<>(targetBooks);
+            intersection.retainAll(otherBooks);
 
-            // Only keep users with at least one shared book
-            if (common > 0) {
-                similarity.put(otherUser, common);
+            Set<String> union = new HashSet<>(targetBooks);
+            union.addAll(otherBooks);
+
+            double jaccard = (double) intersection.size() / union.size();
+
+            if (jaccard > 0) {
+                similarity.put(otherUser, jaccard);
             }
         }
 
@@ -306,20 +305,27 @@ public class BookRecommender {
         Map<String, Integer> scores = new HashMap<>();
 
         // Iterate through similar users
+        // find the highest similarity
+        double maxSim = -1;
+        String bestUser = null;
+
         for (String user : similarity.keySet()) {
+            double sim = similarity.get(user);
 
-            // The weight is the similarity (number of shared books)
-            int weight = similarity.get(user);
-
-            // Look at books liked by this similar user
-            for (String book : userToBooks.get(user)) {
-
-                // Skip books already liked by the target user
-                if (targetBooks.contains(book)) continue;
-
-                // Add weighted score to this candidate book
-                scores.put(book, scores.getOrDefault(book, 0) + weight);
+            if (sim > maxSim) {
+                maxSim = sim;
+                bestUser = user;
+            } else if (Math.abs(sim - maxSim) < 1e-9) {
+                // tie → alphabetical
+                if (user.compareTo(bestUser) < 0) {
+                    bestUser = user;
+                }
             }
+        }
+
+        for (String book : userToBooks.get(bestUser)) {
+            if (targetBooks.contains(book)) continue;
+            scores.put(book, scores.getOrDefault(book, 0) + 1);
         }
 
         // If no candidate books found, return NONE
@@ -332,7 +338,9 @@ public class BookRecommender {
 
             // First sort by score (higher score first)
             if (!b.getValue().equals(a.getValue())) {
-                return b.getValue() - a.getValue();
+                int cmp = Integer.compare(b.getValue(), a.getValue());
+                if (cmp != 0) return cmp;
+                return a.getKey().compareTo(b.getKey());
             }
 
             // If scores are equal, sort alphabetically
