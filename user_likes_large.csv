@@ -1,0 +1,1316 @@
+User_ID,Book_ID
+fast_fox,The Return of the King
+fast_fox,The Hobbit
+fast_fox,Snow Crash
+fast_fox,Hyperion
+fast_fox,A Storm of Swords
+fast_fox,The Way of Kings
+fast_fox,The Name of the Wind
+fast_fox,Starship Troopers
+fast_fox,Dune
+fast_fox,Foundation
+fast_fox,Ender's Game
+fast_fox,The Fellowship of the Ring
+fast_lion,The Return of the King
+fast_lion,A Clash of Kings
+fast_lion,The Hobbit
+fast_lion,Madame Bovary
+fast_lion,The Way of Kings
+fast_lion,The Name of the Wind
+fast_lion,The Handmaid's Tale
+fast_lion,Pride and Prejudice
+fast_lion,Great Expectations
+fast_lion,A Game of Thrones
+fast_lion,A Storm of Swords
+fast_bear,Anna Karenina
+fast_bear,In the Woods
+fast_bear,Madame Bovary
+fast_bear,Jane Eyre
+fast_bear,The Girl with the Dragon Tattoo
+fast_bear,Solaris
+fast_bear,Moby Dick
+fast_bear,The Adventures of Sherlock Holmes
+fast_bear,War and Peace
+fast_bear,Pride and Prejudice
+fast_bear,Murder on the Orient Express
+fast_bear,Great Expectations
+fast_bear,Middlemarch
+fast_bear,Wuthering Heights
+fast_eagle,The Big Sleep
+fast_eagle,Rebecca
+fast_eagle,1984
+fast_eagle,A Clockwork Orange
+fast_eagle,And Then There Were None
+fast_eagle,Animal Farm
+fast_eagle,Brave New World
+fast_eagle,The Girl with the Dragon Tattoo
+fast_eagle,The Adventures of Sherlock Holmes
+fast_eagle,Gone Girl
+fast_eagle,Murder on the Orient Express
+fast_eagle,The Postman Always Rings Twice
+fast_eagle,The Maltese Falcon
+fast_eagle,A Game of Thrones
+fast_eagle,Fahrenheit 451
+fast_owl,The Hunger Games
+fast_owl,Lord of the Flies
+fast_owl,Rebecca
+fast_owl,A Clockwork Orange
+fast_owl,Snow Crash
+fast_owl,Hyperion
+fast_owl,Brave New World
+fast_owl,The Handmaid's Tale
+fast_owl,I Robot
+fast_owl,Ender's Game
+fast_owl,Fahrenheit 451
+fast_toad,A Clash of Kings
+fast_toad,The Return of the King
+fast_toad,Starship Troopers
+fast_toad,The Hobbit
+fast_toad,Snow Crash
+fast_toad,Hyperion
+fast_toad,The Way of Kings
+fast_toad,Solaris
+fast_toad,Ringworld
+fast_toad,The Name of the Wind
+fast_toad,War and Peace
+fast_toad,Neuromancer
+fast_toad,Foundation
+fast_toad,A Storm of Swords
+fast_quokka,Anna Karenina
+fast_quokka,The Return of the King
+fast_quokka,A Clash of Kings
+fast_quokka,American Gods
+fast_quokka,Madame Bovary
+fast_quokka,The Way of Kings
+fast_quokka,Jane Eyre
+fast_quokka,The Girl with the Dragon Tattoo
+fast_quokka,The Name of the Wind
+fast_quokka,Murder on the Orient Express
+fast_quokka,Great Expectations
+fast_quokka,Wuthering Heights
+fast_quokka,A Storm of Swords
+fast_snake,Anna Karenina
+fast_snake,The Big Sleep
+fast_snake,Rebecca
+fast_snake,In the Woods
+fast_snake,Ender's Game
+fast_snake,Jane Eyre
+fast_snake,Moby Dick
+fast_snake,Gone Girl
+fast_snake,War and Peace
+fast_snake,David Copperfield
+fast_snake,Pride and Prejudice
+fast_snake,Great Expectations
+fast_snake,Middlemarch
+fast_snake,Wuthering Heights
+fast_dog,The Big Sleep
+fast_dog,Rebecca
+fast_dog,A Clockwork Orange
+fast_dog,And Then There Were None
+fast_dog,The Girl with the Dragon Tattoo
+fast_dog,The Adventures of Sherlock Holmes
+fast_dog,Gone Girl
+fast_dog,The Handmaid's Tale
+fast_dog,Murder on the Orient Express
+fast_dog,The Postman Always Rings Twice
+fast_dog,The Maltese Falcon
+fast_dog,Dune
+fast_dog,Fahrenheit 451
+fast_sloth,The Hunger Games
+fast_sloth,Lord of the Flies
+fast_sloth,1984
+fast_sloth,A Clockwork Orange
+fast_sloth,Never Let Me Go
+fast_sloth,And Then There Were None
+fast_sloth,Brave New World
+fast_sloth,Ringworld
+fast_sloth,The Road
+fast_sloth,Neuromancer
+fast_sloth,Dune
+fast_sloth,Foundation
+fast_sloth,Ender's Game
+fast_sloth,Fahrenheit 451
+fast_wolf,American Gods
+fast_wolf,Snow Crash
+fast_wolf,Ringworld
+fast_wolf,The Name of the Wind
+fast_wolf,I Robot
+fast_wolf,The Road
+fast_wolf,Dune
+fast_wolf,Foundation
+fast_wolf,Ender's Game
+fast_wolf,Fahrenheit 451
+fast_wolf,The Fellowship of the Ring
+fast_tiger,Anna Karenina
+fast_tiger,The Return of the King
+fast_tiger,The Fellowship of the Ring
+fast_tiger,A Clash of Kings
+fast_tiger,American Gods
+fast_tiger,The Hobbit
+fast_tiger,The Way of Kings
+fast_tiger,Solaris
+fast_tiger,The Name of the Wind
+fast_tiger,Moby Dick
+fast_tiger,The Two Towers
+fast_tiger,War and Peace
+fast_tiger,David Copperfield
+fast_tiger,Great Expectations
+fast_tiger,A Game of Thrones
+fast_tiger,A Storm of Swords
+fast_cat,Anna Karenina
+fast_cat,And Then There Were None
+fast_cat,Jane Eyre
+fast_cat,The Adventures of Sherlock Holmes
+fast_cat,War and Peace
+fast_cat,Pride and Prejudice
+fast_cat,David Copperfield
+fast_cat,Great Expectations
+fast_cat,Middlemarch
+fast_cat,The Maltese Falcon
+fast_cat,Neuromancer
+fast_shark,The Big Sleep
+fast_shark,Anna Karenina
+fast_shark,Rebecca
+fast_shark,Lord of the Flies
+fast_shark,In the Woods
+fast_shark,And Then There Were None
+fast_shark,Animal Farm
+fast_shark,The Girl with the Dragon Tattoo
+fast_shark,Gone Girl
+fast_shark,The Two Towers
+fast_shark,The Postman Always Rings Twice
+fast_shark,The Road
+fast_shark,The Maltese Falcon
+fast_deer,The Hunger Games
+fast_deer,A Clash of Kings
+fast_deer,Lord of the Flies
+fast_deer,A Clockwork Orange
+fast_deer,Snow Crash
+fast_deer,Never Let Me Go
+fast_deer,Hyperion
+fast_deer,Animal Farm
+fast_deer,Brave New World
+fast_deer,I Robot
+fast_deer,Starship Troopers
+fast_deer,Dune
+fast_deer,Foundation
+fast_hawk,The Return of the King
+fast_hawk,Snow Crash
+fast_hawk,Hyperion
+fast_hawk,Brave New World
+fast_hawk,Solaris
+fast_hawk,Ringworld
+fast_hawk,Neuromancer
+fast_hawk,The Name of the Wind
+fast_hawk,Starship Troopers
+fast_hawk,A Storm of Swords
+fast_hawk,Foundation
+fast_hawk,The Fellowship of the Ring
+fast_frog,Anna Karenina
+fast_frog,The Return of the King
+fast_frog,The Fellowship of the Ring
+fast_frog,A Clash of Kings
+fast_frog,The Way of Kings
+fast_frog,The Two Towers
+fast_frog,Pride and Prejudice
+fast_frog,Great Expectations
+fast_frog,Dune
+fast_frog,Wuthering Heights
+fast_frog,A Storm of Swords
+fast_bat,Anna Karenina
+fast_bat,Lord of the Flies
+fast_bat,The Maltese Falcon
+fast_bat,Snow Crash
+fast_bat,Madame Bovary
+fast_bat,Moby Dick
+fast_bat,The Adventures of Sherlock Holmes
+fast_bat,War and Peace
+fast_bat,David Copperfield
+fast_bat,Pride and Prejudice
+fast_bat,Great Expectations
+fast_bat,Middlemarch
+fast_bat,Murder on the Orient Express
+fast_seal,The Big Sleep
+fast_seal,A Clash of Kings
+fast_seal,Rebecca
+fast_seal,In the Woods
+fast_seal,Never Let Me Go
+fast_seal,And Then There Were None
+fast_seal,Brave New World
+fast_seal,Solaris
+fast_seal,The Adventures of Sherlock Holmes
+fast_seal,Gone Girl
+fast_seal,The Postman Always Rings Twice
+fast_seal,Murder on the Orient Express
+fast_seal,War and Peace
+fast_seal,Fahrenheit 451
+fast_whale,The Hunger Games
+fast_whale,1984
+fast_whale,Snow Crash
+fast_whale,Hyperion
+fast_whale,Animal Farm
+fast_whale,Brave New World
+fast_whale,Ringworld
+fast_whale,The Handmaid's Tale
+fast_whale,I Robot
+fast_whale,The Road
+fast_whale,Neuromancer
+fast_whale,Fahrenheit 451
+slow_fox,The Return of the King
+slow_fox,A Clash of Kings
+slow_fox,Snow Crash
+slow_fox,The Way of Kings
+slow_fox,A Game of Thrones
+slow_fox,Solaris
+slow_fox,Ringworld
+slow_fox,I Robot
+slow_fox,The Two Towers
+slow_fox,Starship Troopers
+slow_fox,Dune
+slow_fox,Foundation
+slow_fox,Ender's Game
+slow_fox,The Fellowship of the Ring
+slow_lion,A Clash of Kings
+slow_lion,Lord of the Flies
+slow_lion,American Gods
+slow_lion,The Hobbit
+slow_lion,Madame Bovary
+slow_lion,The Way of Kings
+slow_lion,Jane Eyre
+slow_lion,The Name of the Wind
+slow_lion,The Two Towers
+slow_lion,Pride and Prejudice
+slow_lion,Great Expectations
+slow_lion,A Game of Thrones
+slow_lion,Wuthering Heights
+slow_lion,A Storm of Swords
+slow_bear,Anna Karenina
+slow_bear,In the Woods
+slow_bear,Jane Eyre
+slow_bear,The Girl with the Dragon Tattoo
+slow_bear,Moby Dick
+slow_bear,The Adventures of Sherlock Holmes
+slow_bear,The Name of the Wind
+slow_bear,War and Peace
+slow_bear,David Copperfield
+slow_bear,The Postman Always Rings Twice
+slow_bear,Great Expectations
+slow_bear,Murder on the Orient Express
+slow_bear,Neuromancer
+slow_bear,Wuthering Heights
+slow_eagle,The Big Sleep
+slow_eagle,1984
+slow_eagle,Lord of the Flies
+slow_eagle,In the Woods
+slow_eagle,A Clockwork Orange
+slow_eagle,Never Let Me Go
+slow_eagle,Hyperion
+slow_eagle,And Then There Were None
+slow_eagle,The Girl with the Dragon Tattoo
+slow_eagle,Murder on the Orient Express
+slow_eagle,The Road
+slow_eagle,The Maltese Falcon
+slow_eagle,Neuromancer
+slow_owl,The Hunger Games
+slow_owl,1984
+slow_owl,Lord of the Flies
+slow_owl,Snow Crash
+slow_owl,Never Let Me Go
+slow_owl,Animal Farm
+slow_owl,Brave New World
+slow_owl,Ringworld
+slow_owl,I Robot
+slow_owl,The Road
+slow_owl,Starship Troopers
+slow_owl,Wuthering Heights
+slow_owl,Fahrenheit 451
+slow_toad,A Clash of Kings
+slow_toad,The Return of the King
+slow_toad,The Fellowship of the Ring
+slow_toad,Snow Crash
+slow_toad,Hyperion
+slow_toad,Solaris
+slow_toad,Neuromancer
+slow_toad,Ringworld
+slow_toad,I Robot
+slow_toad,The Two Towers
+slow_toad,Great Expectations
+slow_toad,Starship Troopers
+slow_toad,Dune
+slow_toad,Foundation
+slow_toad,A Storm of Swords
+slow_quokka,Anna Karenina
+slow_quokka,The Return of the King
+slow_quokka,The Fellowship of the Ring
+slow_quokka,A Clash of Kings
+slow_quokka,American Gods
+slow_quokka,The Hobbit
+slow_quokka,Brave New World
+slow_quokka,Jane Eyre
+slow_quokka,The Name of the Wind
+slow_quokka,The Two Towers
+slow_quokka,War and Peace
+slow_quokka,Great Expectations
+slow_quokka,A Game of Thrones
+slow_quokka,Wuthering Heights
+slow_quokka,A Storm of Swords
+slow_snake,Anna Karenina
+slow_snake,Rebecca
+slow_snake,Madame Bovary
+slow_snake,Great Expectations
+slow_snake,Jane Eyre
+slow_snake,The Girl with the Dragon Tattoo
+slow_snake,Solaris
+slow_snake,Moby Dick
+slow_snake,Gone Girl
+slow_snake,War and Peace
+slow_snake,Pride and Prejudice
+slow_snake,David Copperfield
+slow_snake,Murder on the Orient Express
+slow_snake,Middlemarch
+slow_snake,The Maltese Falcon
+slow_snake,Wuthering Heights
+slow_dog,The Hunger Games
+slow_dog,Rebecca
+slow_dog,In the Woods
+slow_dog,A Clockwork Orange
+slow_dog,And Then There Were None
+slow_dog,Brave New World
+slow_dog,The Girl with the Dragon Tattoo
+slow_dog,Solaris
+slow_dog,The Adventures of Sherlock Holmes
+slow_dog,Gone Girl
+slow_dog,The Handmaid's Tale
+slow_dog,Murder on the Orient Express
+slow_dog,Fahrenheit 451
+slow_sloth,Lord of the Flies
+slow_sloth,1984
+slow_sloth,A Clockwork Orange
+slow_sloth,American Gods
+slow_sloth,Snow Crash
+slow_sloth,Never Let Me Go
+slow_sloth,Animal Farm
+slow_sloth,Brave New World
+slow_sloth,The Way of Kings
+slow_sloth,Neuromancer
+slow_sloth,The Handmaid's Tale
+slow_sloth,Starship Troopers
+slow_sloth,Dune
+slow_sloth,Ender's Game
+slow_sloth,Fahrenheit 451
+slow_wolf,A Clash of Kings
+slow_wolf,In the Woods
+slow_wolf,Snow Crash
+slow_wolf,Hyperion
+slow_wolf,A Game of Thrones
+slow_wolf,Solaris
+slow_wolf,Ringworld
+slow_wolf,Jane Eyre
+slow_wolf,The Name of the Wind
+slow_wolf,I Robot
+slow_wolf,The Two Towers
+slow_wolf,Starship Troopers
+slow_wolf,Foundation
+slow_wolf,The Fellowship of the Ring
+slow_tiger,The Hunger Games
+slow_tiger,The Return of the King
+slow_tiger,A Clash of Kings
+slow_tiger,The Hobbit
+slow_tiger,Madame Bovary
+slow_tiger,The Way of Kings
+slow_tiger,Jane Eyre
+slow_tiger,Moby Dick
+slow_tiger,Gone Girl
+slow_tiger,The Two Towers
+slow_tiger,David Copperfield
+slow_tiger,A Game of Thrones
+slow_tiger,A Storm of Swords
+slow_tiger,The Fellowship of the Ring
+slow_cat,Anna Karenina
+slow_cat,A Clash of Kings
+slow_cat,Rebecca
+slow_cat,Madame Bovary
+slow_cat,Jane Eyre
+slow_cat,Solaris
+slow_cat,Moby Dick
+slow_cat,The Adventures of Sherlock Holmes
+slow_cat,War and Peace
+slow_cat,Pride and Prejudice
+slow_cat,David Copperfield
+slow_cat,Great Expectations
+slow_cat,Middlemarch
+slow_cat,The Postman Always Rings Twice
+slow_shark,Rebecca
+slow_shark,Lord of the Flies
+slow_shark,In the Woods
+slow_shark,1984
+slow_shark,Never Let Me Go
+slow_shark,Animal Farm
+slow_shark,The Girl with the Dragon Tattoo
+slow_shark,Gone Girl
+slow_shark,The Postman Always Rings Twice
+slow_shark,Murder on the Orient Express
+slow_shark,The Road
+slow_shark,The Maltese Falcon
+slow_shark,Fahrenheit 451
+slow_deer,Lord of the Flies
+slow_deer,1984
+slow_deer,A Clockwork Orange
+slow_deer,Never Let Me Go
+slow_deer,Hyperion
+slow_deer,Animal Farm
+slow_deer,Solaris
+slow_deer,The Handmaid's Tale
+slow_deer,I Robot
+slow_deer,The Road
+slow_deer,A Game of Thrones
+slow_deer,Foundation
+slow_deer,Fahrenheit 451
+slow_hawk,Starship Troopers
+slow_hawk,American Gods
+slow_hawk,Snow Crash
+slow_hawk,The Hobbit
+slow_hawk,Hyperion
+slow_hawk,Solaris
+slow_hawk,Ringworld
+slow_hawk,The Adventures of Sherlock Holmes
+slow_hawk,I Robot
+slow_hawk,Great Expectations
+slow_hawk,Neuromancer
+slow_hawk,Dune
+slow_hawk,Foundation
+slow_hawk,A Storm of Swords
+slow_frog,Anna Karenina
+slow_frog,A Clash of Kings
+slow_frog,The Fellowship of the Ring
+slow_frog,The Return of the King
+slow_frog,American Gods
+slow_frog,Madame Bovary
+slow_frog,The Way of Kings
+slow_frog,The Name of the Wind
+slow_frog,Great Expectations
+slow_frog,A Game of Thrones
+slow_frog,A Storm of Swords
+slow_bat,Anna Karenina
+slow_bat,In the Woods
+slow_bat,Madame Bovary
+slow_bat,And Then There Were None
+slow_bat,Jane Eyre
+slow_bat,The Girl with the Dragon Tattoo
+slow_bat,The Adventures of Sherlock Holmes
+slow_bat,War and Peace
+slow_bat,Pride and Prejudice
+slow_bat,David Copperfield
+slow_bat,Great Expectations
+slow_bat,The Maltese Falcon
+slow_bat,Wuthering Heights
+slow_seal,The Big Sleep
+slow_seal,A Clockwork Orange
+slow_seal,And Then There Were None
+slow_seal,The Adventures of Sherlock Holmes
+slow_seal,Gone Girl
+slow_seal,The Handmaid's Tale
+slow_seal,Murder on the Orient Express
+slow_seal,The Postman Always Rings Twice
+slow_seal,The Road
+slow_seal,The Maltese Falcon
+slow_seal,Fahrenheit 451
+slow_whale,The Hunger Games
+slow_whale,A Clash of Kings
+slow_whale,1984
+slow_whale,Lord of the Flies
+slow_whale,Snow Crash
+slow_whale,Never Let Me Go
+slow_whale,Hyperion
+slow_whale,Brave New World
+slow_whale,Ringworld
+slow_whale,The Road
+slow_whale,Dune
+slow_whale,Foundation
+happy_fox,Starship Troopers
+happy_fox,The Hobbit
+happy_fox,Snow Crash
+happy_fox,Hyperion
+happy_fox,A Game of Thrones
+happy_fox,Animal Farm
+happy_fox,Solaris
+happy_fox,Gone Girl
+happy_fox,I Robot
+happy_fox,Neuromancer
+happy_fox,Dune
+happy_fox,Foundation
+happy_fox,Ender's Game
+happy_fox,The Fellowship of the Ring
+happy_lion,The Return of the King
+happy_lion,A Clash of Kings
+happy_lion,American Gods
+happy_lion,The Hobbit
+happy_lion,Jane Eyre
+happy_lion,The Name of the Wind
+happy_lion,Moby Dick
+happy_lion,The Two Towers
+happy_lion,David Copperfield
+happy_lion,Pride and Prejudice
+happy_lion,Great Expectations
+happy_lion,A Game of Thrones
+happy_lion,A Storm of Swords
+happy_lion,Wuthering Heights
+happy_lion,Fahrenheit 451
+happy_lion,The Fellowship of the Ring
+happy_bear,Anna Karenina
+happy_bear,Hyperion
+happy_bear,Madame Bovary
+happy_bear,The Girl with the Dragon Tattoo
+happy_bear,Moby Dick
+happy_bear,Gone Girl
+happy_bear,War and Peace
+happy_bear,Pride and Prejudice
+happy_bear,David Copperfield
+happy_bear,The Postman Always Rings Twice
+happy_bear,Middlemarch
+happy_bear,The Fellowship of the Ring
+happy_eagle,The Big Sleep
+happy_eagle,Rebecca
+happy_eagle,Lord of the Flies
+happy_eagle,In the Woods
+happy_eagle,Never Let Me Go
+happy_eagle,And Then There Were None
+happy_eagle,Brave New World
+happy_eagle,Gone Girl
+happy_eagle,The Handmaid's Tale
+happy_eagle,The Postman Always Rings Twice
+happy_eagle,Murder on the Orient Express
+happy_eagle,The Maltese Falcon
+happy_owl,The Hunger Games
+happy_owl,1984
+happy_owl,Lord of the Flies
+happy_owl,A Clockwork Orange
+happy_owl,Never Let Me Go
+happy_owl,Hyperion
+happy_owl,Animal Farm
+happy_owl,Brave New World
+happy_owl,Solaris
+happy_owl,The Girl with the Dragon Tattoo
+happy_owl,The Name of the Wind
+happy_owl,I Robot
+happy_owl,The Road
+happy_owl,Dune
+happy_owl,Ender's Game
+happy_owl,Fahrenheit 451
+happy_toad,American Gods
+happy_toad,The Hobbit
+happy_toad,Snow Crash
+happy_toad,Hyperion
+happy_toad,The Way of Kings
+happy_toad,Solaris
+happy_toad,Ringworld
+happy_toad,The Name of the Wind
+happy_toad,The Two Towers
+happy_toad,War and Peace
+happy_toad,Starship Troopers
+happy_toad,Foundation
+happy_toad,Ender's Game
+happy_quokka,A Clash of Kings
+happy_quokka,The Return of the King
+happy_quokka,American Gods
+happy_quokka,Madame Bovary
+happy_quokka,The Name of the Wind
+happy_quokka,Moby Dick
+happy_quokka,The Two Towers
+happy_quokka,War and Peace
+happy_quokka,David Copperfield
+happy_quokka,Middlemarch
+happy_quokka,A Game of Thrones
+happy_quokka,A Storm of Swords
+happy_snake,Never Let Me Go
+happy_snake,Madame Bovary
+happy_snake,Jane Eyre
+happy_snake,Moby Dick
+happy_snake,War and Peace
+happy_snake,Pride and Prejudice
+happy_snake,David Copperfield
+happy_snake,Great Expectations
+happy_snake,The Postman Always Rings Twice
+happy_snake,The Maltese Falcon
+happy_snake,Murder on the Orient Express
+happy_dog,The Big Sleep
+happy_dog,1984
+happy_dog,In the Woods
+happy_dog,A Clockwork Orange
+happy_dog,Never Let Me Go
+happy_dog,And Then There Were None
+happy_dog,The Way of Kings
+happy_dog,The Girl with the Dragon Tattoo
+happy_dog,Ringworld
+happy_dog,The Adventures of Sherlock Holmes
+happy_dog,Gone Girl
+happy_dog,The Handmaid's Tale
+happy_dog,Murder on the Orient Express
+happy_dog,The Maltese Falcon
+happy_dog,Fahrenheit 451
+happy_sloth,The Hunger Games
+happy_sloth,1984
+happy_sloth,Lord of the Flies
+happy_sloth,A Clockwork Orange
+happy_sloth,Snow Crash
+happy_sloth,Never Let Me Go
+happy_sloth,Animal Farm
+happy_sloth,Brave New World
+happy_sloth,Solaris
+happy_sloth,Ringworld
+happy_sloth,Gone Girl
+happy_sloth,The Handmaid's Tale
+happy_sloth,Foundation
+happy_sloth,Ender's Game
+happy_sloth,Fahrenheit 451
+happy_wolf,The Return of the King
+happy_wolf,Starship Troopers
+happy_wolf,American Gods
+happy_wolf,Hyperion
+happy_wolf,Madame Bovary
+happy_wolf,The Way of Kings
+happy_wolf,The Name of the Wind
+happy_wolf,The Postman Always Rings Twice
+happy_wolf,Neuromancer
+happy_wolf,Dune
+happy_wolf,Foundation
+happy_wolf,Ender's Game
+happy_wolf,A Storm of Swords
+happy_tiger,A Clash of Kings
+happy_tiger,The Return of the King
+happy_tiger,American Gods
+happy_tiger,The Hobbit
+happy_tiger,Ender's Game
+happy_tiger,The Name of the Wind
+happy_tiger,Moby Dick
+happy_tiger,The Two Towers
+happy_tiger,David Copperfield
+happy_tiger,A Storm of Swords
+happy_tiger,Dune
+happy_tiger,Wuthering Heights
+happy_tiger,The Fellowship of the Ring
+happy_cat,In the Woods
+happy_cat,Madame Bovary
+happy_cat,Jane Eyre
+happy_cat,Solaris
+happy_cat,Moby Dick
+happy_cat,War and Peace
+happy_cat,Pride and Prejudice
+happy_cat,David Copperfield
+happy_cat,Great Expectations
+happy_cat,Middlemarch
+happy_cat,The Maltese Falcon
+happy_cat,Murder on the Orient Express
+happy_cat,Wuthering Heights
+happy_shark,The Big Sleep
+happy_shark,Lord of the Flies
+happy_shark,1984
+happy_shark,In the Woods
+happy_shark,American Gods
+happy_shark,And Then There Were None
+happy_shark,Animal Farm
+happy_shark,The Adventures of Sherlock Holmes
+happy_shark,Gone Girl
+happy_shark,The Handmaid's Tale
+happy_shark,Murder on the Orient Express
+happy_shark,The Postman Always Rings Twice
+happy_shark,War and Peace
+happy_shark,The Road
+happy_deer,The Hunger Games
+happy_deer,Lord of the Flies
+happy_deer,1984
+happy_deer,Never Let Me Go
+happy_deer,Animal Farm
+happy_deer,Brave New World
+happy_deer,Solaris
+happy_deer,Gone Girl
+happy_deer,The Handmaid's Tale
+happy_deer,I Robot
+happy_deer,The Postman Always Rings Twice
+happy_deer,The Road
+happy_deer,Dune
+happy_deer,Foundation
+happy_deer,Ender's Game
+happy_hawk,The Return of the King
+happy_hawk,The Fellowship of the Ring
+happy_hawk,Starship Troopers
+happy_hawk,Snow Crash
+happy_hawk,Hyperion
+happy_hawk,Solaris
+happy_hawk,Ringworld
+happy_hawk,Jane Eyre
+happy_hawk,The Name of the Wind
+happy_hawk,The Two Towers
+happy_hawk,Pride and Prejudice
+happy_hawk,Neuromancer
+happy_hawk,Dune
+happy_hawk,Ender's Game
+happy_hawk,A Storm of Swords
+happy_frog,Anna Karenina
+happy_frog,The Return of the King
+happy_frog,A Clash of Kings
+happy_frog,American Gods
+happy_frog,Madame Bovary
+happy_frog,The Way of Kings
+happy_frog,Moby Dick
+happy_frog,The Two Towers
+happy_frog,Pride and Prejudice
+happy_frog,Middlemarch
+happy_frog,A Storm of Swords
+happy_bat,Anna Karenina
+happy_bat,1984
+happy_bat,The Girl with the Dragon Tattoo
+happy_bat,Moby Dick
+happy_bat,The Adventures of Sherlock Holmes
+happy_bat,War and Peace
+happy_bat,Pride and Prejudice
+happy_bat,Murder on the Orient Express
+happy_bat,Great Expectations
+happy_bat,Middlemarch
+happy_bat,The Maltese Falcon
+happy_seal,The Big Sleep
+happy_seal,1984
+happy_seal,In the Woods
+happy_seal,Animal Farm
+happy_seal,The Girl with the Dragon Tattoo
+happy_seal,Murder on the Orient Express
+happy_seal,The Postman Always Rings Twice
+happy_seal,The Maltese Falcon
+happy_seal,Dune
+happy_seal,Fahrenheit 451
+happy_whale,1984
+happy_whale,Lord of the Flies
+happy_whale,A Clockwork Orange
+happy_whale,Snow Crash
+happy_whale,Never Let Me Go
+happy_whale,Hyperion
+happy_whale,Animal Farm
+happy_whale,Brave New World
+happy_whale,Solaris
+happy_whale,The Girl with the Dragon Tattoo
+happy_whale,The Handmaid's Tale
+happy_whale,The Road
+happy_whale,Starship Troopers
+happy_whale,Foundation
+happy_whale,Ender's Game
+happy_whale,Fahrenheit 451
+sad_fox,Starship Troopers
+sad_fox,American Gods
+sad_fox,Snow Crash
+sad_fox,Hyperion
+sad_fox,A Game of Thrones
+sad_fox,Solaris
+sad_fox,Ringworld
+sad_fox,The Name of the Wind
+sad_fox,Middlemarch
+sad_fox,Neuromancer
+sad_fox,Dune
+sad_fox,Foundation
+sad_fox,Ender's Game
+sad_lion,Anna Karenina
+sad_lion,A Clash of Kings
+sad_lion,The Return of the King
+sad_lion,The Fellowship of the Ring
+sad_lion,The Hunger Games
+sad_lion,American Gods
+sad_lion,The Way of Kings
+sad_lion,The Name of the Wind
+sad_lion,The Adventures of Sherlock Holmes
+sad_lion,The Two Towers
+sad_lion,War and Peace
+sad_lion,Pride and Prejudice
+sad_lion,Great Expectations
+sad_lion,A Game of Thrones
+sad_lion,A Storm of Swords
+sad_bear,Anna Karenina
+sad_bear,Rebecca
+sad_bear,Madame Bovary
+sad_bear,Hyperion
+sad_bear,Brave New World
+sad_bear,Jane Eyre
+sad_bear,The Adventures of Sherlock Holmes
+sad_bear,War and Peace
+sad_bear,Pride and Prejudice
+sad_bear,David Copperfield
+sad_bear,Great Expectations
+sad_bear,Middlemarch
+sad_bear,The Postman Always Rings Twice
+sad_bear,Wuthering Heights
+sad_eagle,The Big Sleep
+sad_eagle,The Hunger Games
+sad_eagle,Rebecca
+sad_eagle,Lord of the Flies
+sad_eagle,A Clockwork Orange
+sad_eagle,Never Let Me Go
+sad_eagle,And Then There Were None
+sad_eagle,The Adventures of Sherlock Holmes
+sad_eagle,The Postman Always Rings Twice
+sad_eagle,Murder on the Orient Express
+sad_eagle,The Maltese Falcon
+sad_owl,The Hunger Games
+sad_owl,A Clockwork Orange
+sad_owl,Middlemarch
+sad_owl,Hyperion
+sad_owl,Animal Farm
+sad_owl,Brave New World
+sad_owl,The Road
+sad_owl,Starship Troopers
+sad_owl,Foundation
+sad_owl,Fahrenheit 451
+sad_toad,The Return of the King
+sad_toad,Starship Troopers
+sad_toad,Hyperion
+sad_toad,A Game of Thrones
+sad_toad,Animal Farm
+sad_toad,Solaris
+sad_toad,Ringworld
+sad_toad,Gone Girl
+sad_toad,The Two Towers
+sad_toad,Neuromancer
+sad_toad,Dune
+sad_toad,Ender's Game
+sad_toad,A Storm of Swords
+sad_quokka,The Return of the King
+sad_quokka,American Gods
+sad_quokka,Madame Bovary
+sad_quokka,The Name of the Wind
+sad_quokka,Moby Dick
+sad_quokka,The Two Towers
+sad_quokka,David Copperfield
+sad_quokka,A Game of Thrones
+sad_quokka,A Storm of Swords
+sad_quokka,Wuthering Heights
+sad_quokka,Fahrenheit 451
+sad_quokka,The Fellowship of the Ring
+sad_snake,The Big Sleep
+sad_snake,In the Woods
+sad_snake,Madame Bovary
+sad_snake,Moby Dick
+sad_snake,Gone Girl
+sad_snake,Murder on the Orient Express
+sad_snake,Pride and Prejudice
+sad_snake,David Copperfield
+sad_snake,Great Expectations
+sad_snake,The Maltese Falcon
+sad_snake,Wuthering Heights
+sad_dog,The Big Sleep
+sad_dog,Rebecca
+sad_dog,1984
+sad_dog,In the Woods
+sad_dog,A Clockwork Orange
+sad_dog,Lord of the Flies
+sad_dog,And Then There Were None
+sad_dog,Animal Farm
+sad_dog,The Girl with the Dragon Tattoo
+sad_dog,Gone Girl
+sad_dog,The Handmaid's Tale
+sad_dog,Murder on the Orient Express
+sad_dog,The Postman Always Rings Twice
+sad_dog,The Road
+sad_dog,The Maltese Falcon
+sad_sloth,Lord of the Flies
+sad_sloth,A Clockwork Orange
+sad_sloth,Snow Crash
+sad_sloth,Never Let Me Go
+sad_sloth,Hyperion
+sad_sloth,Animal Farm
+sad_sloth,Brave New World
+sad_sloth,The Handmaid's Tale
+sad_sloth,I Robot
+sad_sloth,The Road
+sad_sloth,Ender's Game
+sad_sloth,Fahrenheit 451
+sad_wolf,A Clash of Kings
+sad_wolf,American Gods
+sad_wolf,Snow Crash
+sad_wolf,A Game of Thrones
+sad_wolf,Ringworld
+sad_wolf,Neuromancer
+sad_wolf,The Two Towers
+sad_wolf,Starship Troopers
+sad_wolf,Dune
+sad_wolf,Foundation
+sad_wolf,Ender's Game
+sad_wolf,The Fellowship of the Ring
+sad_tiger,A Clash of Kings
+sad_tiger,The Return of the King
+sad_tiger,Never Let Me Go
+sad_tiger,Madame Bovary
+sad_tiger,The Way of Kings
+sad_tiger,Jane Eyre
+sad_tiger,The Two Towers
+sad_tiger,War and Peace
+sad_tiger,Pride and Prejudice
+sad_tiger,A Game of Thrones
+sad_tiger,A Storm of Swords
+sad_tiger,The Fellowship of the Ring
+sad_cat,Anna Karenina
+sad_cat,Rebecca
+sad_cat,And Then There Were None
+sad_cat,The Girl with the Dragon Tattoo
+sad_cat,Moby Dick
+sad_cat,Gone Girl
+sad_cat,War and Peace
+sad_cat,Pride and Prejudice
+sad_cat,David Copperfield
+sad_cat,The Postman Always Rings Twice
+sad_cat,Middlemarch
+sad_cat,Great Expectations
+sad_cat,Wuthering Heights
+sad_cat,A Storm of Swords
+sad_shark,The Big Sleep
+sad_shark,Anna Karenina
+sad_shark,Rebecca
+sad_shark,Lord of the Flies
+sad_shark,And Then There Were None
+sad_shark,Brave New World
+sad_shark,The Girl with the Dragon Tattoo
+sad_shark,Solaris
+sad_shark,Ringworld
+sad_shark,The Adventures of Sherlock Holmes
+sad_shark,The Handmaid's Tale
+sad_shark,The Postman Always Rings Twice
+sad_shark,Murder on the Orient Express
+sad_shark,The Maltese Falcon
+sad_deer,Anna Karenina
+sad_deer,Lord of the Flies
+sad_deer,1984
+sad_deer,A Clockwork Orange
+sad_deer,Starship Troopers
+sad_deer,Hyperion
+sad_deer,Brave New World
+sad_deer,Solaris
+sad_deer,The Handmaid's Tale
+sad_deer,I Robot
+sad_deer,Murder on the Orient Express
+sad_deer,The Road
+sad_deer,Neuromancer
+sad_hawk,A Clash of Kings
+sad_hawk,The Return of the King
+sad_hawk,Snow Crash
+sad_hawk,The Way of Kings
+sad_hawk,Animal Farm
+sad_hawk,Solaris
+sad_hawk,Neuromancer
+sad_hawk,The Name of the Wind
+sad_hawk,Starship Troopers
+sad_hawk,Dune
+sad_hawk,Foundation
+sad_hawk,Ender's Game
+sad_hawk,The Fellowship of the Ring
+sad_frog,A Clash of Kings
+sad_frog,The Return of the King
+sad_frog,The Hobbit
+sad_frog,The Way of Kings
+sad_frog,Ringworld
+sad_frog,The Name of the Wind
+sad_frog,Moby Dick
+sad_frog,The Two Towers
+sad_frog,Pride and Prejudice
+sad_frog,Middlemarch
+sad_frog,A Game of Thrones
+sad_frog,The Fellowship of the Ring
+sad_bat,In the Woods
+sad_bat,Jane Eyre
+sad_bat,Ringworld
+sad_bat,Moby Dick
+sad_bat,The Adventures of Sherlock Holmes
+sad_bat,War and Peace
+sad_bat,David Copperfield
+sad_bat,Murder on the Orient Express
+sad_bat,Great Expectations
+sad_bat,Middlemarch
+sad_bat,Wuthering Heights
+sad_seal,The Big Sleep
+sad_seal,Rebecca
+sad_seal,1984
+sad_seal,In the Woods
+sad_seal,Lord of the Flies
+sad_seal,And Then There Were None
+sad_seal,The Adventures of Sherlock Holmes
+sad_seal,Gone Girl
+sad_seal,The Handmaid's Tale
+sad_seal,The Postman Always Rings Twice
+sad_seal,Murder on the Orient Express
+sad_seal,The Road
+sad_seal,Fahrenheit 451
+sad_whale,The Hunger Games
+sad_whale,1984
+sad_whale,Lord of the Flies
+sad_whale,A Clockwork Orange
+sad_whale,Snow Crash
+sad_whale,Never Let Me Go
+sad_whale,Animal Farm
+sad_whale,Brave New World
+sad_whale,Ringworld
+sad_whale,I Robot
+sad_whale,The Road
+sad_whale,Dune
+sad_whale,Ender's Game
+sad_whale,Fahrenheit 451
+brave_fox,The Hunger Games
+brave_fox,American Gods
+brave_fox,Snow Crash
+brave_fox,Hyperion
+brave_fox,A Game of Thrones
+brave_fox,Solaris
+brave_fox,Ringworld
+brave_fox,The Girl with the Dragon Tattoo
+brave_fox,The Name of the Wind
+brave_fox,I Robot
+brave_fox,The Two Towers
+brave_fox,The Postman Always Rings Twice
+brave_fox,Starship Troopers
+brave_fox,Dune
+brave_fox,Foundation
+brave_fox,Ender's Game
+brave_fox,The Fellowship of the Ring
+brave_lion,Anna Karenina
+brave_lion,The Return of the King
+brave_lion,A Clash of Kings
+brave_lion,American Gods
+brave_lion,The Hobbit
+brave_lion,Madame Bovary
+brave_lion,The Way of Kings
+brave_lion,Jane Eyre
+brave_lion,The Name of the Wind
+brave_lion,Moby Dick
+brave_lion,Middlemarch
+brave_lion,A Game of Thrones
+brave_lion,A Storm of Swords
+brave_bear,Anna Karenina
+brave_bear,The Big Sleep
+brave_bear,Rebecca
+brave_bear,Madame Bovary
+brave_bear,Jane Eyre
+brave_bear,The Girl with the Dragon Tattoo
+brave_bear,Moby Dick
+brave_bear,I Robot
+brave_bear,War and Peace
+brave_bear,Pride and Prejudice
+brave_bear,Murder on the Orient Express
+brave_bear,Middlemarch
+brave_bear,The Maltese Falcon
+brave_bear,Wuthering Heights
+brave_eagle,The Big Sleep
+brave_eagle,The Hunger Games
+brave_eagle,Anna Karenina
+brave_eagle,Rebecca
+brave_eagle,1984
+brave_eagle,In the Woods
+brave_eagle,Never Let Me Go
+brave_eagle,And Then There Were None
+brave_eagle,The Girl with the Dragon Tattoo
+brave_eagle,Solaris
+brave_eagle,Gone Girl
+brave_eagle,Wuthering Heights
+brave_owl,The Hunger Games
+brave_owl,1984
+brave_owl,Lord of the Flies
+brave_owl,Never Let Me Go
+brave_owl,Animal Farm
+brave_owl,Brave New World
+brave_owl,Ringworld
+brave_owl,The Handmaid's Tale
+brave_owl,I Robot
+brave_owl,The Road
+brave_owl,Foundation
+brave_owl,Fahrenheit 451
+brave_toad,A Clash of Kings
+brave_toad,The Hobbit
+brave_toad,Snow Crash
+brave_toad,Hyperion
+brave_toad,A Game of Thrones
+brave_toad,Solaris
+brave_toad,Neuromancer
+brave_toad,Jane Eyre
+brave_toad,The Name of the Wind
+brave_toad,Wuthering Heights
+brave_toad,I Robot
+brave_toad,The Two Towers
+brave_toad,Starship Troopers
+brave_toad,Dune
+brave_toad,Ender's Game
+brave_quokka,Anna Karenina
+brave_quokka,American Gods
+brave_quokka,The Hobbit
+brave_quokka,Jane Eyre
+brave_quokka,The Name of the Wind
+brave_quokka,Moby Dick
+brave_quokka,The Two Towers
+brave_quokka,David Copperfield
+brave_quokka,Middlemarch
+brave_quokka,A Storm of Swords
+brave_quokka,The Fellowship of the Ring
+brave_snake,Anna Karenina
+brave_snake,The Big Sleep
+brave_snake,In the Woods
+brave_snake,Madame Bovary
+brave_snake,The Adventures of Sherlock Holmes
+brave_snake,The Name of the Wind
+brave_snake,I Robot
+brave_snake,War and Peace
+brave_snake,David Copperfield
+brave_snake,Pride and Prejudice
+brave_snake,Great Expectations
+brave_snake,Middlemarch
+brave_dog,The Big Sleep
+brave_dog,Rebecca
+brave_dog,Lord of the Flies
+brave_dog,In the Woods
+brave_dog,And Then There Were None
+brave_dog,The Girl with the Dragon Tattoo
+brave_dog,The Adventures of Sherlock Holmes
+brave_dog,Gone Girl
+brave_dog,The Handmaid's Tale
+brave_dog,The Postman Always Rings Twice
+brave_dog,Murder on the Orient Express
+brave_dog,The Road
+brave_dog,A Game of Thrones
+brave_sloth,The Hunger Games
+brave_sloth,1984
+brave_sloth,A Clockwork Orange
+brave_sloth,Never Let Me Go
+brave_sloth,Animal Farm
+brave_sloth,Brave New World
+brave_sloth,Solaris
+brave_sloth,Ringworld
+brave_sloth,The Handmaid's Tale
+brave_sloth,I Robot
+brave_sloth,The Road
+brave_sloth,Dune
+brave_sloth,Foundation
+brave_sloth,Fahrenheit 451
+brave_sloth,The Fellowship of the Ring
+brave_wolf,Anna Karenina
+brave_wolf,A Clash of Kings
+brave_wolf,1984
+brave_wolf,Snow Crash
+brave_wolf,Hyperion
+brave_wolf,The Way of Kings
+brave_wolf,Solaris
+brave_wolf,Ringworld
+brave_wolf,I Robot
+brave_wolf,Starship Troopers
+brave_wolf,Dune
+brave_wolf,Foundation
+brave_wolf,Ender's Game
+brave_wolf,A Storm of Swords
+brave_tiger,Anna Karenina
+brave_tiger,A Clash of Kings
+brave_tiger,The Return of the King
+brave_tiger,The Hobbit
+brave_tiger,Madame Bovary
+brave_tiger,Jane Eyre
+brave_tiger,War and Peace
+brave_tiger,Pride and Prejudice
+brave_tiger,A Game of Thrones
+brave_tiger,A Storm of Swords
+brave_tiger,The Fellowship of the Ring
+brave_cat,Anna Karenina
+brave_cat,Rebecca
+brave_cat,A Clockwork Orange
+brave_cat,Madame Bovary
+brave_cat,And Then There Were None
+brave_cat,Jane Eyre
+brave_cat,Moby Dick
+brave_cat,War and Peace
+brave_cat,David Copperfield
+brave_cat,Pride and Prejudice
+brave_cat,Middlemarch
+brave_cat,The Maltese Falcon
+brave_cat,Wuthering Heights
+brave_shark,The Big Sleep
+brave_shark,Rebecca
+brave_shark,Lord of the Flies
+brave_shark,And Then There Were None
+brave_shark,Animal Farm
+brave_shark,Brave New World
+brave_shark,The Girl with the Dragon Tattoo
+brave_shark,Gone Girl
+brave_shark,The Handmaid's Tale
+brave_shark,The Postman Always Rings Twice
+brave_shark,Murder on the Orient Express
+brave_shark,Middlemarch
+brave_shark,The Maltese Falcon
+brave_shark,Fahrenheit 451
+brave_deer,The Hunger Games
+brave_deer,Lord of the Flies
+brave_deer,1984
+brave_deer,Snow Crash
+brave_deer,Never Let Me Go
+brave_deer,Animal Farm
+brave_deer,Brave New World
+brave_deer,I Robot
+brave_deer,The Road
+brave_deer,Neuromancer
+brave_deer,Dune
+brave_deer,Foundation
+brave_deer,Fahrenheit 451
+brave_hawk,Rebecca
+brave_hawk,The Hobbit
+brave_hawk,Snow Crash
+brave_hawk,Hyperion
+brave_hawk,The Way of Kings
+brave_hawk,A Game of Thrones
+brave_hawk,Solaris
+brave_hawk,Ringworld
+brave_hawk,The Name of the Wind
+brave_hawk,I Robot
+brave_hawk,The Two Towers
+brave_hawk,Pride and Prejudice
+brave_hawk,Starship Troopers
+brave_hawk,Foundation
+brave_hawk,Ender's Game
+brave_hawk,A Storm of Swords
+brave_frog,The Return of the King
+brave_frog,A Clash of Kings
+brave_frog,In the Woods
+brave_frog,American Gods
+brave_frog,The Hobbit
+brave_frog,Madame Bovary
+brave_frog,The Way of Kings
+brave_frog,The Name of the Wind
+brave_frog,Moby Dick
+brave_frog,The Two Towers
+brave_frog,Middlemarch
+brave_frog,The Maltese Falcon
+brave_frog,A Game of Thrones
+brave_frog,A Storm of Swords
+brave_bat,Anna Karenina
+brave_bat,In the Woods
+brave_bat,And Then There Were None
+brave_bat,The Way of Kings
+brave_bat,The Girl with the Dragon Tattoo
+brave_bat,Moby Dick
+brave_bat,The Adventures of Sherlock Holmes
+brave_bat,War and Peace
+brave_bat,Pride and Prejudice
+brave_bat,David Copperfield
+brave_bat,Great Expectations
+brave_bat,Middlemarch
+brave_bat,Murder on the Orient Express
+brave_bat,Wuthering Heights
+brave_bat,A Storm of Swords
+brave_seal,The Big Sleep
+brave_seal,The Hunger Games
+brave_seal,Rebecca
+brave_seal,A Clockwork Orange
+brave_seal,And Then There Were None
+brave_seal,Brave New World
+brave_seal,The Girl with the Dragon Tattoo
+brave_seal,Gone Girl
+brave_seal,The Handmaid's Tale
+brave_seal,The Postman Always Rings Twice
+brave_seal,The Maltese Falcon
+brave_seal,Fahrenheit 451
+brave_whale,The Hunger Games
+brave_whale,1984
+brave_whale,Lord of the Flies
+brave_whale,A Clockwork Orange
+brave_whale,Snow Crash
+brave_whale,Never Let Me Go
+brave_whale,Solaris
+brave_whale,I Robot
+brave_whale,A Game of Thrones
+brave_whale,Fahrenheit 451
