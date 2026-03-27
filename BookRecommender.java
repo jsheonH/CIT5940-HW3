@@ -85,24 +85,41 @@ public class BookRecommender {
     // =========================
     private void loadData(String filename) {
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
-            String line;
-            br.readLine();
+            String line = br.readLine();
 
-            while ((line = br.readLine()) != null) {
-                String[] parts = line.split(",");
-                if (parts.length < 2) continue;
-                String user = parts[0];
-                String book = parts[1];
+            if (line == null) {
+                return;
+            }
 
-                // Build user -> books mapping
+            String[] firstParts = line.split(",", 2);
+
+            // Only skip the first line if it is actually a header
+            if (!(firstParts.length == 2
+                    && firstParts[0].equals("User_ID")
+                    && firstParts[1].equals("Book_ID"))) {
+                String user = firstParts[0];
+                String book = firstParts[1];
+
                 userToBooks.putIfAbsent(user, new HashSet<>());
                 userToBooks.get(user).add(book);
 
-                // Build book -> users mapping
                 bookToUsers.putIfAbsent(book, new HashSet<>());
                 bookToUsers.get(book).add(user);
             }
 
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",", 2);
+                if (parts.length < 2) continue;
+
+                String user = parts[0];
+                String book = parts[1];
+
+                userToBooks.putIfAbsent(user, new HashSet<>());
+                userToBooks.get(user).add(book);
+
+                bookToUsers.putIfAbsent(book, new HashSet<>());
+                bookToUsers.get(book).add(user);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -258,78 +275,72 @@ public class BookRecommender {
     // It recommends books by finding users with similar reading preferences and suggesting books they liked that the target user has not read yet
     // =========================
     public String userBasedRecommendation(String targetUser) {
-
-        // Step 1: Check if the target user exists in the dataset
         if (!userToBooks.containsKey(targetUser)) {
             return "NONE";
         }
 
-        // Retrieve all books liked by the target user
         Set<String> targetBooks = userToBooks.get(targetUser);
 
-        // Step 2: Compute similarity between target user and all other users
-        // Key = other user, Value = number of common books
+        // Step 1: compute Jaccard similarity
         Map<String, Double> similarity = new HashMap<>();
 
-        // Iterate through all users
         for (String otherUser : userToBooks.keySet()) {
-
-            // Skip comparing the user with themselves
             if (otherUser.equals(targetUser)) continue;
 
-            // Get the set of books liked by the other user
             Set<String> otherBooks = userToBooks.get(otherUser);
 
-            // Count how many books both users like (intersection size)
             Set<String> intersection = new HashSet<>(targetBooks);
             intersection.retainAll(otherBooks);
+
+            if (intersection.isEmpty()) continue;
 
             Set<String> union = new HashSet<>(targetBooks);
             union.addAll(otherBooks);
 
             double jaccard = (double) intersection.size() / union.size();
-
-            if (jaccard > 0) {
-                similarity.put(otherUser, jaccard);
-            }
+            similarity.put(otherUser, jaccard);
         }
 
-        // If no similar users found, return NONE
-        if (similarity.isEmpty()) return "NONE";
-
-        // Step 3: Use similarity scores to recommend books
-        // Key = book, Value = accumulated score
-        Map<String, Double> scores = new HashMap<>();
-
-        // Iterate through similar users
-        // find the highest similarity
-        double maxSim = Collections.max(similarity.values());
-
-        List<String> bestUsers = new ArrayList<>();
-
-        for (String user : similarity.keySet()) {
-            if (Math.abs(similarity.get(user) - maxSim) < 1e-9) {
-                bestUsers.add(user);
-            }
+        if (similarity.isEmpty()) {
+            return "NONE";
         }
 
-        // alphabetical tie-break
-        Collections.sort(bestUsers);
+        // Step 2: select top 5 taste twins
+        List<Map.Entry<String, Double>> twins = new ArrayList<>(similarity.entrySet());
+        Collections.sort(twins, (a, b) -> {
+            int cmp = Double.compare(b.getValue(), a.getValue());
+            if (cmp != 0) return cmp;
+            return a.getKey().compareTo(b.getKey());
+        });
 
-        // just use best users
-        for (String user : bestUsers) {
-            for (String book : userToBooks.get(user)) {
+        List<String> topTwins = new ArrayList<>();
+        for (int i = 0; i < twins.size() && topTwins.size() < 5; i++) {
+            topTwins.add(twins.get(i).getKey());
+        }
 
+        // Step 3: count how many taste twins liked each candidate book
+        Map<String, Integer> likedByTwins = new HashMap<>();
+
+        for (String twin : topTwins) {
+            for (String book : userToBooks.get(twin)) {
                 if (targetBooks.contains(book)) continue;
-
-                scores.put(book, scores.getOrDefault(book, 0.0) + 1);
+                likedByTwins.put(book, likedByTwins.getOrDefault(book, 0) + 1);
             }
         }
 
-        if (scores.isEmpty()) return "NONE";
+        if (likedByTwins.isEmpty()) {
+            return "NONE";
+        }
 
+        // Step 4: score = (# of taste twins who liked B) / (# of overall users who liked B)
+        Map<String, Double> scores = new HashMap<>();
+        for (String book : likedByTwins.keySet()) {
+            double score = (double) likedByTwins.get(book) / bookToUsers.get(book).size();
+            scores.put(book, score);
+        }
+
+        // Step 5: sort and return top 5
         List<Map.Entry<String, Double>> list = new ArrayList<>(scores.entrySet());
-
         Collections.sort(list, (a, b) -> {
             int cmp = Double.compare(b.getValue(), a.getValue());
             if (cmp != 0) return cmp;
@@ -337,7 +348,6 @@ public class BookRecommender {
         });
 
         List<String> result = new ArrayList<>();
-
         for (int i = 0; i < list.size() && result.size() < 5; i++) {
             result.add(list.get(i).getKey());
         }
