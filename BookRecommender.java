@@ -174,12 +174,9 @@ public class BookRecommender {
         // 1. Descending by weight
         // 2. Lexicographically by book ID (tie-break)
         Collections.sort(list, (a, b) -> {
-            if (!a.getValue().equals(b.getValue())) {
-                int cmp = Integer.compare(b.getValue(), a.getValue());
-                if (cmp != 0) return cmp;
-                return a.getKey().compareTo(b.getKey()); // higher weight first
-            }
-            return a.getKey().compareTo(b.getKey()); // alphabetical order
+            int cmp = Integer.compare(b.getValue(), a.getValue());
+            if (cmp != 0) return cmp;
+            return a.getKey().compareTo(b.getKey());
         });
 
         // Collect top 5 results
@@ -212,7 +209,7 @@ public class BookRecommender {
         // Convert likedBooks to a set for fast lookup (to exclude later)
         Set<String> likedSet = new HashSet<>(likedBooks);
         // Step 1: Aggregate scores
-        for (String book : likedSet) {
+        for (String book : likedBooks) {
 
             // Skip if the book is not in the graph
             if (!coLikeGraph.containsKey(book)) continue;
@@ -302,59 +299,49 @@ public class BookRecommender {
 
         // Step 3: Use similarity scores to recommend books
         // Key = book, Value = accumulated score
-        Map<String, Integer> scores = new HashMap<>();
+        Map<String, Double> scores = new HashMap<>();
 
         // Iterate through similar users
         // find the highest similarity
-        double maxSim = -1;
-        String bestUser = null;
+        double maxSim = Collections.max(similarity.values());
+
+        List<String> bestUsers = new ArrayList<>();
 
         for (String user : similarity.keySet()) {
-            double sim = similarity.get(user);
-
-            if (sim > maxSim) {
-                maxSim = sim;
-                bestUser = user;
-            } else if (Math.abs(sim - maxSim) < 1e-9) {
-                // tie → alphabetical
-                if (user.compareTo(bestUser) < 0) {
-                    bestUser = user;
-                }
+            if (Math.abs(similarity.get(user) - maxSim) < 1e-9) {
+                bestUsers.add(user);
             }
         }
 
-        for (String book : userToBooks.get(bestUser)) {
-            if (targetBooks.contains(book)) continue;
-            scores.put(book, scores.getOrDefault(book, 0) + 1);
+        // alphabetical tie-break
+        Collections.sort(bestUsers);
+
+        // just use best users
+        for (String user : bestUsers) {
+            for (String book : userToBooks.get(user)) {
+
+                if (targetBooks.contains(book)) continue;
+
+                scores.put(book, scores.getOrDefault(book, 0.0) + 1);
+            }
         }
 
-        // If no candidate books found, return NONE
         if (scores.isEmpty()) return "NONE";
 
-        // Step 4: Sort books by score (descending), then by name (alphabetical)
-        List<Map.Entry<String, Integer>> list = new ArrayList<>(scores.entrySet());
+        List<Map.Entry<String, Double>> list = new ArrayList<>(scores.entrySet());
 
-        list.sort((a, b) -> {
-
-            // First sort by score (higher score first)
-            if (!b.getValue().equals(a.getValue())) {
-                int cmp = Integer.compare(b.getValue(), a.getValue());
-                if (cmp != 0) return cmp;
-                return a.getKey().compareTo(b.getKey());
-            }
-
-            // If scores are equal, sort alphabetically
+        Collections.sort(list, (a, b) -> {
+            int cmp = Double.compare(b.getValue(), a.getValue());
+            if (cmp != 0) return cmp;
             return a.getKey().compareTo(b.getKey());
         });
 
-        // Step 5: Collect top 5 recommendations
         List<String> result = new ArrayList<>();
 
         for (int i = 0; i < list.size() && result.size() < 5; i++) {
             result.add(list.get(i).getKey());
         }
 
-        // Return result as comma-separated string, or NONE if empty
         return result.isEmpty() ? "NONE" : String.join(",", result);
     }
 
